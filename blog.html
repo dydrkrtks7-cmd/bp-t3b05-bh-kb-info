@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방화 노래방 블로그 | 솔직히 여기가 찐이다</title>
+    <meta name="description" content="방화 노래방 정보, 가격, 시설, 리뷰 한방에! 방화동에서 제일 핫한 노래방 찾고 있으면 여기다. 예약 전화 010-6279-0862 지금 바로 걸어라.">
+    <meta name="keywords" content="방화 노래방, 방화 노래방 정보, 방화동 노래방, 방화 가성비 노래방, 방화 코인노래방, 방화 노래방 추천, 방화 노래방 전화번호, 방화 노래방 가격">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <link rel="canonical" href="https://t3b05-bh-kb-info.vercel.app/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="방화 노래방 정보 | 블로그 - 방화동 최고의 노래방">
+    <meta property="og:description" content="방화 노래방 정보, 가격, 시설, 리뷰 한방에! 방화동에서 제일 핫한 노래방 찾고 있으면 여기다. 예약 전화 010-6279-0862 지금 바로 걸어라.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b05-bh-kb-info.vercel.app/blog">
+    <meta property="og:image" content="https://t3b05-bh-kb-info.vercel.app/og-image.jpg">
+    <meta property="og:locale" content="ko_KR">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="방화 노래방 정보 | 블로그 - 방화동 최고의 노래방">
+    <meta name="twitter:description" content="방화 노래방 정보, 가격, 시설, 리뷰 한방에! 방화동에서 제일 핫한 노래방 찾고 있으면 여기다. 예약 전화 010-6279-0862 지금 바로 걸어라.">
+    <meta name="twitter:image" content="https://t3b05-bh-kb-info.vercel.app/og-image.jpg">
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { 
+            font-family: 'Arial Black', 'Impact', 'Helvetica Neue', sans-serif; 
+            background: #f0f0f0; 
+            color: #111; 
+            line-height: 1.4; 
+            min-height: 100vh;
+        }
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 { font-family: 'Arial Black', 'Impact', sans-serif; text-transform: uppercase; letter-spacing: -0.03em; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; border-bottom: 6px solid #111; display: inline-block; }
+        h2 { font-size: 2.2rem; margin-bottom: 0.8rem; border-bottom: 4px solid #111; display: inline-block; }
+        h3 { font-size: 1.8rem; margin-bottom: 0.6rem; }
+        p, li, .review-text, .info-text { font-family: 'Courier New', monospace; font-size: 1.1rem; line-height: 1.6; }
+        a { color: #111; text-decoration: underline wavy #ff0000; }
+        a:hover, a:focus { background: #ff0; color: #000; }
+        /* ===== LAYOUT ===== */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section { padding: 4rem 0; border-bottom: 10px solid #111; }
+        .section:last-of-type { border-bottom: none; }
+        /* ===== NAV ===== */
+        .nav-present { display: flex; justify-content: space-between; align-items: center; background: #111; color: #fff; padding: 1rem 2rem; }
+        .nav-present .logo { font-family: 'Arial Black', sans-serif; font-size: 1.8rem; color: #ff0; text-decoration: none; }
+        .nav-present .logo:hover { background: transparent; }
+        .nav-present ul { display: flex; list-style: none; gap: 2rem; }
+        .nav-present ul li a { color: #fff; text-decoration: none; font-family: 'Courier New', monospace; font-size: 1.2rem; text-transform: uppercase; }
+        .nav-present ul li a:hover { color: #ff0; background: transparent; }
+        .hamburger-menu { display: none; flex-direction: column; cursor: pointer; }
+        .hamburger-menu span { width: 30px; height: 4px; background: #fff; margin: 4px 0; }
+        @media (max-width: 768px) {
+            .nav-present ul { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: #111; padding: 1rem; }
+            .nav-present ul.active { display: flex; }
+            .hamburger-menu { display: flex; }
+            .responsive-768 .nav-present ul { display: none; }
+            .responsive-768 .nav-present ul.active { display: flex; }
+        }
+        .tel-link { font-size: 1.5rem; background: #ff0; color: #111; padding: 0.5rem 1.5rem; text-decoration: none; border: 4px solid #111; display: inline-block; margin-top: 1rem; }
+        .tel-link:hover { background: #111; color: #ff0; }
+        /* ===== CARD ===== */
+        .card { background: #fff; border: 6px solid #111; padding: 2rem; margin-bottom: 2rem; }
+        .card h3 { margin-bottom: 0.5rem; }
+        /* ===== FOOTER ===== */
+        .footer { background: #111; color: #fff; padding: 2rem; text-align: center; }
+        .footer a { color: #ff0; }
+        /* ===== SPECIFIC ===== */
+        .blog-post { background: #fff; border: 6px solid #111; padding: 2rem; }
+        .blog-post .meta { font-family: 'Courier New', monospace; color: #666; margin-bottom: 1rem; }
+        .blog-post .body { margin-top: 1.5rem; }
+        .blog-post .body p { margin-bottom: 1rem; }
+        .blog-post .highlight { background: #ff0; padding: 0.2rem 0.5rem; display: inline-block; }
+        .btn-cta { display: inline-block; background: #ff0; color: #111; padding: 0.8rem 2rem; border: 4px solid #111; font-family: 'Arial Black', sans-serif; font-size: 1.4rem; text-decoration: none; margin-top: 1rem; }
+        .btn-cta:hover { background: #111; color: #ff0; }
+    </style>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <nav class="nav-present">
+        <a href="index.html" class="logo">🔥 방화 노래방</a>
+        <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="about.html">소개</a></li>
+            <li><a href="price.html">가격</a></li>
+            <li><a href="review.html">리뷰</a></li>
+            <li><a href="blog.html" style="color:#ff0;">블로그</a></li>
+            <li><a href="contact.html">문의</a></li>
+        </ul>
+        <div class="hamburger-menu" onclick="this.parentElement.querySelector('ul').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Blog Content Section -->
+        <section class="section">
+            <div class="container">
+                <h1>방화 노래방 블로그</h1>
+                <p style="margin-bottom:2rem; font-size:1.3rem;">진짜 쓸모있는 정보만 때려박는다. 닥치고 읽어라.</p>
+
+                <!-- Single Blog Post -->
+                <article class="blog-post">
+                    <h2 style="border-bottom:6px solid #111; display:block;">방화동 노래방 끝판왕 대공개</h2>
+                    <div class="meta">
+                        <span>작성자: 방화브로</span> | 
+                        <span>날짜: 2025-03-18</span> | 
+                        <span>조회: 1,234</span>
+                    </div>
+                    <div class="body">
+                        <p>야, 방화동에서 노래방 찾고 있냐? 좆된 거다. 왜냐면 내가 다 까발려줄 테니까. 솔직히 말해서 노래방 수준은 대부분 거기서 거기야. 근데? 지금 내가 찍어주는 곳은 진짜 다르다.</p>
+                        <p>첫 타자는 <strong>방화코인노래방</strong>. 존나 싸다. 1곡에 200원? 개쩐다. 근데 시설? 별로야. 마이크에서 잡음 존나 나고, 스피커는 깨진 지 오래임. 돈 아끼고 싶다면 여기 가라. 근데 내가 추천하진 않음.</p>
+                        <p>두 번째, <strong>룸2노래방</strong>. 여기는 코인보다 좀 비싸지만 방이 넓어. 단체로 오면 괜찮음. 근데 문제는? 예약이 빡센다. 주말에는 로비에서 한 시간 기다리는 건 기본. 미친 거 아니냐? ㅋㅋㅋ</p>
+                        <p>세 번째, <strong>방화동가성비노래방</strong>. 내 최애다. 가격: 1시간에 15,000원. 시설: 개깔끔. 부스 안에 공기청정기, 스마트폰 충전기, 심지어 눕방 가능. 진짜 여기 오면 다른 데 못 간다. 내가 보증한다.</p>
+                        <p>마지막으로 전화번호 하나 던져준다. <strong>010-6279-0862</strong>. 여기가 진짜 찐이다. 지금 당장 예약해라. 안 하면 후회한다. 내가 말해주는 거다.</p>
+                        <p style="margin-top:2rem; background:#111; color:#ff0; padding:1rem; border-left:10px solid #ff0;">
+                            결론: 방화동에서 노래방 고민하지 마라. 가성비 노래방으로 가라. 돈 아깝지 않다. 예약은 번호로 바로 걸어라. 안 걸면 니 손해.
+                        </p>
+                        <a href="tel:010-6279-0862" class="tel-link" style="display:inline-block; margin-top:1.5rem;">📞 지금 전화 걸기 010-6279-0862</a>
+                    </div>
+                </article>
+
+                <!-- Call to Action -->
+                <div style="text-align:center; margin-top:3rem;">
+                    <p style="font-size:1.5rem; font-family:'Arial Black',sans-serif;">더 많은 찐 후기가 궁금하다면?</p>
+                    <a href="review.html" class="btn-cta">리뷰 페이지로 고고</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 방화 노래방 정보 | 운영자: 방화브로 | <a href="tel:010-6279-0862">010-6279-0862</a></p>
+            <p style="margin-top:0.5rem; font-family:'Courier New',monospace;">이 사이트는 순수한 정보 제공 목적입니다. 솔직히 말하는 게 내 스타일이다.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 간단한 햄버거 메뉴 토글
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            this.parentElement.querySelector('ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
